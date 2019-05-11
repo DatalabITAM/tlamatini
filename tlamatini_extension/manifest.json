@@ -1,0 +1,20 @@
+{
+"manifest_version": 2,
+    "name": "[your extension name here]",
+    "description": "[your extension description here]",
+    "version": "1.0",
+    "web_accessible_resources": [
+    "*.json"
+],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
